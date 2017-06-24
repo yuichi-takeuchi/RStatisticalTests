@@ -2,12 +2,12 @@ setwd("D:/RWD")
 rm(list=ls())
 
 #sink(file="blahblah.txt",split=TRUE)
-sink(file="Stats_Demo_TwoSampleTest.txt",split=TRUE)
+sink(file="DemoResults_TwoSampleTest.txt",split=TRUE)
 
 cat("TwoSampleTest.R\n")
 
 #data <- read.csv("blahblah.csv", header=T)
-data <- read.csv("Demo_TwoSampleTest.csv", header=T)
+data <- read.csv("DemoData_TwoSampleTest.csv", header=T)
 cat("\ninput\n")
 data
 cat("\n")

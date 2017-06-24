@@ -1,9 +1,9 @@
 setwd("D:/RWD")
 rm(list=ls())
 
-sink(file="Stats_Demo_TwoWayANOVA.txt",split=TRUE)
+sink(file="DemoResults_2AOV.txt",split=TRUE)
 
-data <- read.csv("Demo_TwoWayANOVA.csv", header=T)
+data <- read.csv("DemoData_TwoWayANOVA.csv", header=T)
 
 cat("TwoWayANOVA.R\n")
 cat("\ninput\n")

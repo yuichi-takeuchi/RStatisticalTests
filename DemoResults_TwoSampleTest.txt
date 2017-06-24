@@ -1,0 +1,86 @@
+TwoSampleTest.R
+
+input
+      group1    group2
+1  1.0961577 0.8810961
+2  1.0252282 1.0730013
+3  1.2020306 0.7221018
+4  1.0325374 0.6955634
+5  0.9877736 0.7066127
+6  0.8128927 0.7627715
+7  0.8178712 0.5142776
+8  0.9888874 0.4675392
+9  1.2013350 0.4527050
+10 1.0034888 0.3772464
+11 1.0523020 0.7849130
+12 1.0938366 0.8834719
+13 1.1705903 0.8154494
+14 1.6090345 0.8170327
+15 0.8535779 0.7849130
+16 0.9789868 0.8834719
+17 0.9703252 0.8154494
+18 1.0171111 0.8170327
+
+     group1           group2      
+ Min.   :0.8129   Min.   :0.3772  
+ 1st Qu.:0.9812   1st Qu.:0.6983  
+ Median :1.0212   Median :0.7849  
+ Mean   :1.0508   Mean   :0.7364  
+ 3rd Qu.:1.0956   3rd Qu.:0.8170  
+ Max.   :1.6090   Max.   :1.0730  
+
+standard deviation
+group1[1] 0.1797008
+group2[1] 0.178599
+
+Non-paired Two Sample Tests
+
+	F test to compare two variances
+
+data:  data$group1 and data$group2
+F = 1.0124, num df = 17, denom df = 17, p-value = 0.9801
+alternative hypothesis: true ratio of variances is not equal to 1
+95 percent confidence interval:
+ 0.3786993 2.7063875
+sample estimates:
+ratio of variances 
+          1.012377 
+
+
+	Two Sample t-test
+
+data:  data$group1 and data$group2
+t = 5.265, df = 34, p-value = 7.78e-06
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ 0.1930472 0.4357659
+sample estimates:
+mean of x mean of y 
+1.0507760 0.7363694 
+
+
+	Welch Two Sample t-test
+
+data:  data$group1 and data$group2
+t = 5.265, df = 33.999, p-value = 7.781e-06
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ 0.1930470 0.4357661
+sample estimates:
+mean of x mean of y 
+1.0507760 0.7363694 
+
+
+	Wilcoxon rank sum test with continuity correction
+
+data:  data$group1 and data$group2
+W = 299, p-value = 1.562e-05
+alternative hypothesis: true location shift is not equal to 0
+
+
+	Two-sample Kolmogorov-Smirnov test
+
+data:  data$group1 and data$group2
+D = 0.77778, p-value = 3.733e-05
+alternative hypothesis: two-sided
+

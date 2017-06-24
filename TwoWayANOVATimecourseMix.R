@@ -2,12 +2,14 @@ setwd("D:/RWD")
 rm(list=ls())
 
 #sink(file="blahblah.txt",split=TRUE)
-sink(file="DemoResults_2AOVTimecourse.txt",split=TRUE)
+sink(file="DemoResults_2AOVTimecourseMix.txt",split=TRUE)
+
+cat("TwoWayANOVATimecourseMix.R\n\n")
+cat("TwoWay-ANOVA(Mix)\n")
 
 #data <- read.csv("blahblah.csv", header=T)
-data1 <- read.csv("DemoData_TwoWayANOVATimecourse.csv", header=T)
-cat("TwoWayANOVATimecourse.R\n\n")
-cat("TwoWay-ANOVA (Independent)\n")
+data1 <- read.csv("DemoData_TwoWayANOVATimecourseMix.csv", header=T)
+
 cat("\ninput\n")
 data1
 
@@ -20,9 +22,10 @@ tapply(data2$value, list(data2$group, data2$time), mean)
 cat("\nsd\n")
 tapply(data2$value, list(data2$group, data2$time), sd)
 cat("\nANOVA\n")
-summary(aov(data2$value~data2$time*data2$group))
-#summary(aov(data2$value~data2$time,subset=(data2$group=="group1")))
-#summary(aov(data2$value~data2$time,subset=(data2$group=="group2")))
+summary(aov(data2$value~
+	data2$time*data2$group
+	+Error(data2$number2:data2$group
+	+data2$number2:data2$time:data2$group)))
 
 cat("\nOnly time.5\n")
 summary(aov(data2$value~data2$group,subset=(data2$time=="5")))
@@ -55,5 +58,4 @@ TukeyHSD(aov(data2$value~data2$group,subset=(data2$time=="35")))
 cat("\nOnly time.40\n")
 summary(aov(data2$value~data2$group,subset=(data2$time=="40")))
 TukeyHSD(aov(data2$value~data2$group,subset=(data2$time=="40")))
-
 sink()
