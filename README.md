@@ -43,7 +43,7 @@ help()
 or use the online help domument (https://www.r-project.org/help.html).
 
 ## DOI
-
+[![DOI](https://zenodo.org/badge/95289065.svg)](https://zenodo.org/badge/latestdoi/95289065)
 
 ## Versioning
 We use [SemVer](http://semver.org/) for versioning.
