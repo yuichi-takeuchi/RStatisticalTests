@@ -31,7 +31,9 @@ install.packages("reshape")
 * CorrelationTest.R: Pearson, Spearman, or Kendall's correlation test between two series of values.
 * TwoSampleTest.R: Parametric and non-parametric tests between two independent groups.
 * OneWayANOVA.R: Parametric and non-parametric tests between multiple groups followed by pairwise tests with significance level corrections.
-* TwoWayANOVA.R: Two-way repeated measures ANOVA (Independent).
+* TwoWayANOVA.R: Two-way ANOVA (single or repeated measures).
+* TwoWayANOVATimecourse.R: Two-way repeated measures ANOVA along time course.
+* TwoWayANOVATimecourseMix.R: Two-way repeated measures ANOVA along time course mixed.
 
 ## Help
 Use the help function as below.
