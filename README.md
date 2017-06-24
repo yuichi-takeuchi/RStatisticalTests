@@ -5,19 +5,25 @@ Practical script collection for biostatistics.
 
 ### Prerequisites
 * R software (https://www.r-project.org/)
+* R reshape package
 
 The codes have been tested with R ver 3.2.3 (2015-12-10).
 
 ### Installing
 * Install R software.
+* Run R software as administrator.
+* Install reshape package
+```
+install.packages("reshape")
+```
 * Download the above .R stript files.
 * Move a .R stript file, which you want to use, to a working directory. In demo files, the default working directry is 'D:\RWD'.
 
 ### How to used
 1. Move a data source comma-separated values file into the working directry (eg. use Demo_TwoSampleTest.csv).
-2. Launch R software.
+2. Run R software.
 3. Open the sprint in R (File > Open Script...) (eg. use TwoSampleTest.R).
-4. Launch the script (Edit > Run all or Ctrl+A > Ctrl+R).
+4. Run the script (Edit > Run all or Ctrl+A > Ctrl+R).
 5. The results will be available as a text file (eg. Stats_Demo_TwoSampleTest.txt).
 
 ## R stript files
