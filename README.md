@@ -20,11 +20,11 @@ install.packages("reshape")
 * Move a .R stript file, which you want to use, to a working directory. In demo files, the default working directry is 'D:\RWD'.
 
 ### How to used
-1. Move a data source comma-separated values file into the working directry (eg. use Demo_TwoSampleTest.csv).
+1. Move a data source comma-separated values file into the working directry (eg. DemoData_TwoSampleTest.csv).
 2. Run R software.
-3. Open the sprint in R (File > Open Script...) (eg. use TwoSampleTest.R).
+3. Open the sprint in R (File > Open Script...) (eg. TwoSampleTest.R).
 4. Run the script (Edit > Run all or Ctrl+A > Ctrl+R).
-5. The results will be available as a text file (eg. Stats_Demo_TwoSampleTest.txt).
+5. The results will be available as a text file (eg. DemoResults_TwoSampleTest.txt).
 
 ## R stript files
 * ChiSquaredTest.R: Pearson's Chi-squared test
