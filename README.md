@@ -7,24 +7,27 @@ Practical script collection for biostatistics.
 * R software (https://www.r-project.org/)
 * R reshape package
 
-The codes have been tested with R ver 3.2.3 (2015-12-10).
+The codes have been tested with R ver 3.2.3 (2015-12) in Windows 10 and R ver 3.4.3 in macOS 10.13 (2018-3).
 
 ### Installing
 * Install R software.
 * Run R software as administrator.
-* Install reshape package
+* Install reshape package by running the following commant in the R software.
 ```
 install.packages("reshape")
 ```
-* Download the above .R stript files.
-* Move a .R stript file, which you want to use, to a working directory. In demo files, the default working directry is 'D:\RWD'.
+* Download the .R stript files from this repository.
+
+* Move a .R stript file, which you want to use, to a working directory. In demo files, the default working directry is 'D:\RWD' for Windows. Users need to edit 
 
 ### How to used
-1. Move a data source comma-separated values file into the working directry (eg. DemoData_TwoSampleTest.csv).
-2. Run R software.
-3. Open the sprint in R (File > Open Script...) (eg. TwoSampleTest.R).
-4. Run the script (Edit > Run all or Ctrl+A > Ctrl+R).
-5. The results will be available as a text file (eg. DemoResults_TwoSampleTest.txt).
+1. Make a working directory in your computer (e.g. D:\RWD for Win or /User/\<user\>/Desktop for Mac). 
+2. Edit the first line of a .R script file you are going to use (e.g. TwoSampleTestR.R) as for example 'setwd("D:\RWD")' for Win, setwd("/User/\<user\>/Desktop" for Mac) to specify the working directory.
+3. Move a data source comma-separated values file to the working directry (e.g. DemoData_TwoSampleTest.csv).
+4. Launch the R software.
+5. Open the sprint in R (File > Open Script...) (e.g. TwoSampleTest.R).
+6. Run the script (Edit > Run all or Ctrl+A > Ctrl+R for Win, Edit > Cmd+A > Cmd+Return for Mac).
+7. The results will be available as a text file (e.g. DemoResults_TwoSampleTest.txt).
 
 ## R stript files
 * ChiSquaredTest.R: Pearson's Chi-squared test
