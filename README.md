@@ -22,7 +22,7 @@ install.packages("reshape")
 
 ### How to used
 1. Make a working directory in your computer (e.g. D:\RWD for Win or /User/\<user\>/Desktop for Mac). 
-2. Edit the first line of a .R script file you are going to use (e.g. TwoSampleTestR.R) as for example 'setwd("D:\RWD")' for Win, setwd("/User/\<user\>/Desktop" for Mac) to specify the working directory.
+2. To specify the working directory, edit the first line of a .R script file you are going to use (e.g. TwoSampleTestR.R) as for example 'setwd("D:\RWD")' for Win, setwd("/User/\<user\>/Desktop" for Mac).
 3. Move a data source comma-separated values file to the working directry (e.g. DemoData_TwoSampleTest.csv).
 4. Launch the R software.
 5. Open the sprint in R (File > Open Script...) (e.g. TwoSampleTest.R).
