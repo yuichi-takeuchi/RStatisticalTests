@@ -18,12 +18,12 @@ install.packages("reshape")
 ```
 * Download the .R stript files from this repository.
 
-* Move a .R stript file, which you want to use, to a working directory. In demo files, the default working directry is 'D:\RWD' for Windows. Users need to edit 
+* Move a .R stript file, which you want to use, to a working directory. In demo files, the default working directory is 'D:\RWD' for Windows. Users need to edit 
 
 ### How to used
-1. Make a working directory in your computer (e.g. D:\RWD for Win or /User/\<user\>/Desktop for Mac). 
+1. Make a working directory in your computer (e.g. D:\RWD for Windows or /User/\<user\>/Desktop for Macintosh). 
 2. To specify the working directory, edit the first line of a .R script file you are going to use (e.g. TwoSampleTestR.R) as for example 'setwd("D:\RWD")' for Win, setwd("/User/\<user\>/Desktop" for Mac).
-3. Move a data source comma-separated values file to the working directry (e.g. DemoData_TwoSampleTest.csv).
+3. Move a data source comma-separated values file to the working directory (e.g. DemoData_TwoSampleTest.csv).
 4. Launch the R software.
 5. Open the sprint in R (File > Open Script...) (e.g. TwoSampleTest.R).
 6. Run the script (Edit > Run all or Ctrl+A > Ctrl+R for Win, Edit > Cmd+A > Cmd+Return for Mac).
